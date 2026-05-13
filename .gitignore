@@ -1,0 +1,8 @@
+vendor/
+frames/
+dist/
+source.mp4
+thumb.jpg
+*.pyc
+__pycache__/
+KociaCzcionka*
