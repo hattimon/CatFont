@@ -265,19 +265,20 @@ def render_preview(font_path: Path):
     reference = Image.open(REF_IMAGE).convert("RGB")
     reference = reference.resize((reference.width * 14 // 10, reference.height * 14 // 10))
 
-    canvas = Image.new("RGB", (1480, 980), "white")
+    canvas = Image.new("RGB", (1120, 1320), "white")
     draw = ImageDraw.Draw(canvas)
     ui_font = ImageFont.load_default()
-    cat_font = ImageFont.truetype(str(font_path), 82)
+    cat_font = ImageFont.truetype(str(font_path), 78)
 
     canvas.paste(reference, (30, 40))
     draw.text((30, 12), "REFERENCE", fill="black", font=ui_font)
-    draw.text((810, 12), "GENERATED FONT", fill="black", font=ui_font)
+    draw.line((30, 640, 1090, 640), fill=(210, 210, 210), width=1)
+    draw.text((30, 670), "GENERATED FONT", fill="black", font=ui_font)
 
-    y = 110
+    y = 730
     for row in ROW_STRINGS:
-        draw.text((810, y), row, fill="black", font=cat_font)
-        y += 130
+        draw.text((90, y), row, fill="black", font=cat_font)
+        y += 95
 
     canvas.save(preview_path)
 
