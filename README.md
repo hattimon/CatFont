@@ -2,7 +2,7 @@
 
 Cat Font is a playful display typeface built from hand-drawn cat-shaped letters. The uppercase glyphs follow the original cat alphabet reference, and the lowercase glyphs reuse the same shapes at two thirds of the uppercase size.
 
-![Cat Font preview](screenshots/catfont-preview.png)
+![Cat Font preview](screenshots/catfont-preview-clean.png)
 
 ## Download
 
@@ -45,7 +45,7 @@ Android font installation depends on the device manufacturer. The safest option 
 
 - `fonts/CatFont-Regular.ttf` - installable TrueType font
 - `CatFont.zip` - packaged download
-- `screenshots/catfont-preview.png` - visual comparison preview
+- `screenshots/catfont-preview-clean.png` - visual comparison preview
 - `screenshots/catfont-glyph-map.png` - full glyph map
 - `build_cat_font.py` - generation script
 
